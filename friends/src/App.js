@@ -1,14 +1,14 @@
 import "./App.css";
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { useState } from "react";
+//import { getFirestore } from "firebase/firestore";
+//import { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import {
   getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-  updateProfile,
+  //GoogleAuthProvider,
+  // signInWithPopup,
+  //signOut,
+  //updateProfile,
 } from "firebase/auth";
 import SignIn from "./components/Signin/SignIn";
 import ProfilePage from "./components/Userpage/ProfilePage";
@@ -23,7 +23,7 @@ const app = initializeApp({
   measurementId: "G-X2BRRM8TZ1",
 });
 
-const db = getFirestore(app);
+//const db = getFirestore(app);
 const auth = getAuth(app);
 
 function App() {
@@ -43,19 +43,4 @@ function App() {
   );
 }
 
-export function SignOut() {
-  const signout = () => {
-    signOut(auth)
-      .then(() => {
-        console.log("signOut sucessful");
-      })
-      .catch((err) => console.error(err));
-  };
-
-  return (
-    <div>
-      <button onClick={signout}>SIGN OUT</button>
-    </div>
-  );
-}
 export default App;

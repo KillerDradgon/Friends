@@ -20,7 +20,9 @@ const ProfilePage = (props) => {
         <div className="tempWrapper">
           <div className="ProfileCard">
             <img className="ProfileImage" src={props.user.photoURL} />
-            <h2 className="DisplayName">{props.user.displayName}</h2>
+            <h2 className="DisplayName" alt="Profile Picture">
+              {props.user.displayName}
+            </h2>
             <p className="UserEmail">{props.user.email}</p>
             <div className="LogoutContainer">
               <button onClick={signout} className="SignOutButton">
