@@ -16,7 +16,7 @@ const SignIn = (props) => {
       <div className="SignInWrapper">
         <div className="SigninCard">
           <button className="SignInButton" onClick={signin}>
-            <p className="SigninText"> SIGN IN</p>
+            <p className="SigninText"> Google</p>
           </button>
         </div>
       </div>
