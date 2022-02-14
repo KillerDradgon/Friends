@@ -1,0 +1,58 @@
+.SignInWrapper {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.38);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.SignInHighlight {
+  background-color: rgba(255, 255, 255, 0.144);
+  height: 100vh;
+  animation: blinking 650ms infinite alternate;
+}
+@keyframes blinking {
+  25% {
+    background-color: rgba(255, 255, 255, 0.116);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.829);
+  }
+}
+
+.SigninCard {
+  background-color: rgba(71, 71, 71, 1);
+  height: 155px;
+  width: 290px;
+  border-radius: 5px;
+  box-shadow: -6px 8px 4px rgba(0, 0, 0, 25%);
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.SignInButton {
+  border: none;
+  background: none;
+  background-color: #cecece;
+  height: 52px;
+  width: 174px;
+  border-radius: 8px;
+  box-shadow: -4px 10px 4px rgba(0, 0, 0, 25%);
+}
+
+.SignInButton:hover {
+  background-color: #ffffff;
+  height: 55px;
+  width: 178px;
+  cursor: pointer;
+}
+
+.SigninText {
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #474747;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: -5px 4px 3px rgba(0, 0, 0, 25%);
+}

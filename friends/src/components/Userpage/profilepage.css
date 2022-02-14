@@ -1,0 +1,56 @@
+.tempWrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProfileCard {
+  background-color: #545454;
+  height: 350px;
+  width: 281px;
+  border-radius: 4px;
+  box-shadow: -7px 8px 4px rgba(0, 0, 0, 25%);
+}
+.ProfileImage {
+  position: relative;
+  bottom: 15%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 20%);
+}
+.DisplayName {
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: -5px 4px 4px rgba(0, 0, 0, 25%);
+}
+.UserEmail {
+  color: white;
+  font-size: medium;
+}
+
+.SignOutButton {
+  position: relative;
+  top: 75px;
+  border: none;
+  background: none;
+  background-color: #cecece;
+  height: 45px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: -4px 10px 4px rgba(0, 0, 0, 25%);
+  transition: 100ms;
+}
+.SignOutButton:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 210px;
+}
+.LogOutText {
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #474747;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: -5px 4px 3px rgba(0, 0, 0, 25%);
+}
