@@ -21,7 +21,7 @@ const ProfilePage = (props) => {
           <div className="ProfileCard">
             <img
               className="ProfileImage"
-              alt="Profile Picture"
+              alt="Profile"
               src={props.user.photoURL}
             />
             <h2 className="DisplayName">{props.user.displayName}</h2>
