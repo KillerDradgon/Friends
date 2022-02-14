@@ -9,14 +9,14 @@
 .SignInHighlight {
   background-color: rgba(255, 255, 255, 0.144);
   height: 100vh;
-  animation: blinking ms infinite alternate;
+  animation: blinking 00ms infinite alternate;
 }
 @keyframes blinking {
   25% {
     background-color: rgba(255, 255, 255, 0.116);
   }
   100% {
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgb(255, 121, 121);
   }
 }
 

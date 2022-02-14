@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import React from "react";
 import "./signin.css";
 
@@ -7,9 +7,7 @@ const SignIn = (props) => {
   const signin = async () => {
     // Signing in with Google
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(props.auth, provider).then((result) => {
-      console.log("REsult", result);
-    });
+    await signInWithRedirect(props.auth, provider);
   };
   return (
     <div className="SignInHighlight">
